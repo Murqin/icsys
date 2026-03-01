@@ -61,15 +61,17 @@ object SpeedTracker {
 
         val speed3d: Double = sqrt(dx * dx + dy * dy + dz * dz) * TICKS_PER_SECOND
         val speedHorizontal: Double = sqrt(dx * dx + dz * dz) * TICKS_PER_SECOND
-        val speedVertical: Double = dy * TICKS_PER_SECOND
+        // Tiny floating-point jitter (~1e-10) on idle causes V-Speed to drift negative.
+        // Clamp values below a perceptible threshold to zero before they enter the average.
+        val speedVertical: Double = if (kotlin.math.abs(dy) < 1e-6) 0.0 else dy * TICKS_PER_SECOND
 
         val window: Int = HudConfig.smoothingWindow
         speedSum = pushToHistory(speedHistory, speed3d, window, speedSum)
         hSpeedSum = pushToHistory(horizontalSpeedHistory, speedHorizontal, window, hSpeedSum)
         vSpeedSum = pushToHistory(verticalSpeedHistory, speedVertical, window, vSpeedSum)
 
-        currentSpeed = if (speedHistory.isEmpty()) 0.0 else speedSum / speedHistory.size
-        currentHorizontalSpeed = if (horizontalSpeedHistory.isEmpty()) 0.0 else hSpeedSum / horizontalSpeedHistory.size
+        currentSpeed = if (speedHistory.isEmpty()) 0.0 else (speedSum / speedHistory.size).coerceAtLeast(0.0)
+        currentHorizontalSpeed = if (horizontalSpeedHistory.isEmpty()) 0.0 else (hSpeedSum / horizontalSpeedHistory.size).coerceAtLeast(0.0)
         currentVerticalSpeed = if (verticalSpeedHistory.isEmpty()) 0.0 else vSpeedSum / verticalSpeedHistory.size
 
         tickCounter++
