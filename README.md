@@ -4,6 +4,10 @@
 
 A lightweight, client-side Fabric mod for Minecraft 1.21.11 that displays real-time movement speed as a customizable HUD overlay.
 
+## Demo
+
+[![ICSYS Demo](https://img.youtube.com/vi/IFEV1uXG_fc/maxresdefault.jpg)](https://youtu.be/IFEV1uXG_fc)
+
 ## Features
 
 - **3 Speed Metrics** — 3D Speed, Horizontal Speed (H-Speed), Vertical Speed (V-Speed) with ↑↓ direction indicators

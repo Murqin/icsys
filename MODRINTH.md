@@ -6,6 +6,10 @@ A lightweight, client-side speed HUD mod for Minecraft.
 
 Track your movement speed in real time with a fully customizable overlay — choose which metrics to display, add progress bars, adjust smoothing, and position the HUD anywhere on screen.
 
+## 📽️ Demo
+
+[![Watch on YouTube](https://img.youtube.com/vi/IFEV1uXG_fc/maxresdefault.jpg)](https://youtu.be/IFEV1uXG_fc)
+
 ## 🎯 What It Does
 
 Displays your real-time movement speed as a compact HUD overlay with three metrics:
