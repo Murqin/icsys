@@ -6,7 +6,7 @@ A lightweight, client-side Fabric mod for Minecraft 1.21.11 that displays real-t
 
 ## Demo
 
-[![ICSYS Demo](https://img.youtube.com/vi/IFEV1uXG_fc/maxresdefault.jpg)](https://youtu.be/IFEV1uXG_fc)
+[![ICSYS Demo](https://img.youtube.com/vi/IFEV1uXG_fc/hqdefault.jpg)](https://youtu.be/IFEV1uXG_fc)
 
 ## Features
 

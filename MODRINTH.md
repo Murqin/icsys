@@ -8,7 +8,7 @@ Track your movement speed in real time with a fully customizable overlay — cho
 
 ## 📽️ Demo
 
-[![Watch on YouTube](https://img.youtube.com/vi/IFEV1uXG_fc/maxresdefault.jpg)](https://youtu.be/IFEV1uXG_fc)
+[![Watch on YouTube](https://img.youtube.com/vi/IFEV1uXG_fc/hqdefault.jpg)](https://youtu.be/IFEV1uXG_fc)
 
 ## 🎯 What It Does
 
