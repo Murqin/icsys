@@ -1,0 +1,7 @@
+{
+    "key.category.icsys": "I Can Show Your Speed",
+    "key.icsys.toggle_hud": "Hız HUD'unu Aç/Kapat",
+    "key.icsys.open_config": "HUD Ayarlarını Aç",
+    "screen.icsys.hud_config": "Hız HUD Ayarları",
+    "screen.icsys.hud_config.hint": "HUD'u sürükleyerek taşı — ESC ile kaydet ve çık"
+}

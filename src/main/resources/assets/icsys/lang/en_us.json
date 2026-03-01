@@ -1,0 +1,7 @@
+{
+    "key.category.icsys": "I Can Show Your Speed",
+    "key.icsys.toggle_hud": "Toggle Speed HUD",
+    "key.icsys.open_config": "Open HUD Config",
+    "screen.icsys.hud_config": "Speed HUD Configuration",
+    "screen.icsys.hud_config.hint": "Drag the HUD to reposition — ESC to save & exit"
+}
